@@ -1,0 +1,48 @@
+// Zed keymap
+//
+// For information on binding keys, see the Zed
+// documentation: https://zed.dev/docs/key-bindings
+//
+// To see the default key bindings run `zed: open default keymap`
+// from the command palette.
+[
+  {
+    "context": "Workspace",
+    "bindings": {}
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl-~": "workspace::ToggleBottomDock", // toggle terminal
+      "ctrl-shift-t": "workspace::OpenInTerminal"
+    }
+  },
+  {
+    "context": "Editor && vim_mode == normal",
+    "bindings": {
+      "space w": "workspace::Save",
+      "space q": "pane::CloseActiveItem", // close current tab
+      "shift-l": "pane::ActivateNextItem", // next tab
+      "shift-h": "pane::ActivatePreviousItem", // previous tab
+
+      "space e": "pane::RevealInProjectPanel", // toggle file explorer (left dock)
+      "space space": "file_finder::Toggle" // open file finder
+    }
+  },
+  {
+    "context": "ProjectPanel && not_editing",
+    "bindings": {
+      "space e": "workspace::ToggleLeftDock", // toggle the file explorer (left dock)
+      "ctrl-d": "project_panel::Delete", // delete selected item in file explorer (left dock)
+      "ctrl-shift-n": "project_panel::NewDirectory" // create new directory
+    }
+  },
+  {
+    "context": "Terminal",
+    "bindings": {
+      // "ctrl-~": "terminal_panel::ToggleFocus",
+      "ctrl-w": "pane::CloseActiveItem", // don't pass ctrl-w to terminal, let Zed handle it.
+      "ctrl-~": "workspace::ToggleBottomDock" // match vscode behavior
+    }
+  }
+]
