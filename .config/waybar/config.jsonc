@@ -173,7 +173,7 @@
     "format-linked": "{ifname} (No IP) ",
     "format-disconnected": "Disconnected ⚠",
     "format-alt": "{ifname}: {ipaddr}/{cidr}",
-    "on-triple-click-right": "./scripts/open_router.sh",
+    "on-triple-click-right": "$HOME/.config/waybar/scripts/open_router.sh",
   },
   "pulseaudio": {
     // "scroll-step": 1, // %, can be a float
