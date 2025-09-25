@@ -1,1 +1,1 @@
-# My dotenv files
+# My configuration files
