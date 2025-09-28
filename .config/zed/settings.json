@@ -31,7 +31,7 @@
     }
   },
   "project_panel": {
-    "dock": "left"
+    "dock": "right"
   },
   "vim_mode": true,
   "ui_font_size": 16,

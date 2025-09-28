@@ -32,7 +32,7 @@
   {
     "context": "ProjectPanel && not_editing",
     "bindings": {
-      "space e": "workspace::ToggleLeftDock", // toggle the file explorer (left dock)
+      "space e": "workspace::ToggleRightDock", // toggle the file explorer (left dock)
       "ctrl-d": "project_panel::Delete", // delete selected item in file explorer (left dock)
       "ctrl-shift-n": "project_panel::NewDirectory" // create new directory
     }
@@ -40,7 +40,6 @@
   {
     "context": "Terminal",
     "bindings": {
-      // "ctrl-~": "terminal_panel::ToggleFocus",
       "ctrl-w": "pane::CloseActiveItem", // don't pass ctrl-w to terminal, let Zed handle it.
       "ctrl-~": "workspace::ToggleBottomDock" // match vscode behavior
     }
