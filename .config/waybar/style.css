@@ -8,7 +8,7 @@
 }
 
 #waybar {
-    background: transparent;
+    background-color: black;
     color: #c6d0f5;
     margin: 2px 2px;
 }
@@ -55,13 +55,13 @@ button {
 #custom-weather,
 #custom-uptime,
 #custom-docker {
-    background-color: #101010;
+    background-color: black;
     padding: 0.5rem 1rem;
     margin: 5px 0;
 }
 
 #window {
-    background-color: #101010;
+    background-color: black;
     padding: 0.5rem 1rem;
     margin: 5px 0;
     border-radius: 5px;
